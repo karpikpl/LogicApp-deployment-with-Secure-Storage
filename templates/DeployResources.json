@@ -9,10 +9,12 @@
       "type": "String"
     },
     "appInsightName": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "app-insights"
     },
     "use32BitWorkerProcess": {
-      "type": "Bool"
+      "type": "Bool",
+      "defaultValue": true
     },
     "location": {
       "defaultValue": "[resourceGroup().location]",
@@ -22,27 +24,31 @@
       }
     },
     "hostingPlanFEName": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "hosting-plan"
     },
     "contentStorageAccountName": {
       "type": "String"
     },
-
-
     "sku": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "WorkflowStandard"
     },
     "skuCode": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "WS1"
     },
     "workerSize": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "3"
     },
     "workerSizeId": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "3"
     },
     "numberOfWorkers": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "1"
     },
     "vnetName": {
       "defaultValue": "VirtualNetwork",
@@ -52,7 +58,8 @@
       }
     },
     "subnetName": {
-      "type": "String"
+      "type": "String",
+      "defaultValue": "la-subnet"
     },
 
     "virtualNetworkAddressPrefix": {
